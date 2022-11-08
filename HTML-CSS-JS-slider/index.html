@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider Desgin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/image..1.png"></div>
+                <div class="swiper-slide"><img src="images/image..2.png"></div>
+                <div class="swiper-slide"><img src="images/image..3.png"></div>
+                <div class="swiper-slide"><img src="images/image..4.png"></div>
+                <div class="swiper-slide"><img src="images/image..5.png"></div>
+                <div class="swiper-slide"><img src="images/image..6.png"></div>
+                <div class="swiper-slide"><img src="images/image..7.png"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            autoplay:{
+                delay:4000,
+                disableOnInteraction:false,
+            },
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable:true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                    
+                },
+            });
+    </script>
+</body>
+</html>
